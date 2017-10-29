@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.container  .panel-heading{
+    background-color: #337ab7;
+    text-align: center;
+    border:1px solid #337ab7;
+}
+.panel-primary{
+   border-color:#337ab7 ;
+}
+.mt_150{
+    margin-top:150px;
+}
+.form-group .btn1{
+    background-color:#337ab7 ;
+    color: #fff;
+}
