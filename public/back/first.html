@@ -22,16 +22,16 @@
             <li>
                 <a href="user.html">
                     <span class="glyphicon glyphicon-user"></span>
-                   用户管理
+                    用户管理
                 </a>
             </li>
-            <li>
+            <li >
                 <a href="javascript:;" >
                     <span class="glyphicon glyphicon-list"></span>
                     分类管理
                 </a>
-                <div class="nav_cart " style="display: none;">
-                    <a href="first.html">一级分类</a>
+                <div class="nav_cart " style="display: block;">
+                    <a href="first.html" class="nav_style">一级分类</a>
                     <a href="second.html">二级分类</a>
                 </div>
 
@@ -57,14 +57,12 @@
         </a>
     </div>
     <div class="main_content">
-            <ul class="breadcrumb">
-                <li><a href="javascript:;">管理系统</a></li>
-                <li class="active">首页</li>
-            </ul>
-           <div class="content">
-               <div class="left pull-left">11</div>
-               <div class="right pull-right">22</div>
-           </div>
+        <ul class="breadcrumb">
+            <li><a href="javascript:;">管理系统</a></li>
+            <li class="active">分类管理</li>
+            <li>一级分类</li>
+        </ul>
+
     </div>
 </div>
 <!--模态框-->
@@ -90,8 +88,7 @@
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
 <script src="lib/nprogress/nprogress.js"></script>
-<script src="lib/echarts/echarts.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/index.js"></script>
+<!--<script src="js/index.js"></script>-->
 </body>
 </html>
