@@ -32,7 +32,32 @@ $(function(){
         });
     }
     render();
-
+    
+  $('tbody').on("click",".btn", function(){
+       $("#userModal").modal("show");
+       var id=$(this).parent().data("id");
+      var isDelete=$(this).parent().data("isDelete");
+      // console.log(id);
+      // console.log(isDelete);
+      isDelete=isDelete===1?0:1;
+      $(".btn_delete").off().on("click",function () {
+          $.ajax({
+              type:"post",
+              url:"/user/updateUser",
+              data:{
+                  id:id,
+                  isDelete:isDelete
+              },
+              success:function(data){
+                 // console.log(data);
+                  if(data.success){
+                     $("#userModal").modal("hide");
+                      render();
+                  }
+              }
+          })
+      })
+    })
 
 });
 
