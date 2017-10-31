@@ -133,8 +133,15 @@ padding: 0 15px;
 }
 .it_content{
     padding:0 15px;
+
+}
+.it_content table{
     text-align: center;
 }
+.mb_15{
+    margin-bottom:15px;
+}
+
 /*模态框*/
 
 .modal-body{
