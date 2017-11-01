@@ -172,8 +172,18 @@ padding: 0 15px;
     height:100%;
 }
 .fileupload_box #fileupload{
+    width:100%;
     position: absolute;
     left:0;
     top:0;
     opacity: 0;
 }
+.fileupload_box p{
+    width:200px;
+    position: absolute;
+    top:0;
+    left: 100px;
+    margin: 0;
+}
+
+
